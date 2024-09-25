@@ -183,7 +183,7 @@ class _RecommendSettingState extends State<RecommendSetting> {
                   return SelectDialog<int>(
                       title: '选择时长（0即不过滤）',
                       value: minDurationForRcmd,
-                      values: [0, 30, 60, 90, 120].map((e) {
+                      values: [0, 30, 60, 90, 120, 300, 600, 1200].map((e) {
                         return {'title': '$e 秒', 'value': e};
                       }).toList());
                 },
